@@ -21,7 +21,7 @@ export default function XTable() {
 
     if (sortBy === "date") {
       const sorted = [...data].sort(
-        (a, b) => new Date(a.date) - new Date(b.date),
+        (a, b) => new Date(b.date) - new Date(a.date),
       );
       setSortedData(sorted);
     }
